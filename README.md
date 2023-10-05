@@ -6,7 +6,7 @@
 create `.env` file containing
 ```env
 REDIS_URL = "redis://ip:port"
-MONGO_URL = "mongodb://ip:port/db"
+MONGO_URL = "mongodb://ip:port"
 ```
 ### Installation
 

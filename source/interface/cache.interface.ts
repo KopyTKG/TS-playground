@@ -1,4 +1,4 @@
-import {RedisClientType, createClient} from "redis";
+import { RedisClientType, createClient } from "redis";
 
 export class Cache {
     private Client: RedisClientType; 
