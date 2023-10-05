@@ -7,7 +7,5 @@ export class Mongo {
         this.Client.connect()        
     }
 
-    
-
 
 }

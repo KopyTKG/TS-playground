@@ -3,10 +3,14 @@ import dotenv from "dotenv"
 dotenv.config()
 
 import { Cache } from "./interface/cache.interface"
-import {Mongo} from "./interface/mongo.interface"
+import { Mongo } from "./interface/mongo.interface"
+
+const cache = new Cache();
+const db = new Mongo();
+
 
 function Main() {
-    const cache = new Cache()
+    
     cache.set('true','{data: true}')
     .then(status => {
         console.log(status);
@@ -17,6 +21,8 @@ function Main() {
     cache.get('true').then((data) => {
         console.log(data)
     })
+
+
 }
 
 
